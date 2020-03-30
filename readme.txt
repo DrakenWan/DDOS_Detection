@@ -1,3 +1,5 @@
+<small> Word: I only uploaded it on github because my professor instructed so. I am not interested in this project at all. There was no data refining done in this project and I am embarrased that I did not give time to that part of the process. It is always important to explore your dataset to make the model computationally efficient as much as you can. The parameters were just chosen using Random forest Tree classifier and best 5/7 features were considered as parameters to train the model. </small>
+
 # DDOS Detector Using Machine Learning
 # Project Authored by: Kartikay Kaul, Revanth Regeti
 
