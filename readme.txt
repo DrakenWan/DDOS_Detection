@@ -1,13 +1,10 @@
- ``` Word: I only uploaded it on github because my professor instructed so. I am not interested in this project at all. 
- There was no data refining done in this project and I am embarrased that I did not give time to that part of the process. 
- It is always important to explore your dataset to make the model computationally efficient as much as you can. 
- The parameters were just chosen using Random forest Tree classifier 
- and best 5/7 features were considered as parameters to train the model. ```
+The parameters were just chosen using Random forest Tree classifier 
+and best 5/7 features were considered as parameters to train the model.
 
 # DDOS Detector Using Machine Learning
 # Project Authored by: Kartikay Kaul, Revanth Regeti
 
-If you do not wish to read the "bakwaas"/"rubbish" below just scroll
+If you do not wish to read the verbose below just scroll
 to the END OF THIS DOCUMENT (Ensure you have all the python packages installed
 advised in start) and execute the given statements in windows cmd (ensure
 to run those commands where all project files are)
@@ -111,7 +108,7 @@ the python files successfully:
 
 =============END OF FILE =============================
 
-"You do not like reading rubbish. I understand. Just follow below."
+Just follow below.
 
 EXECUTE FOLLOWING COMMANDS ON YOUR CMD:
 
