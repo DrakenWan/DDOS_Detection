@@ -69,9 +69,9 @@ At the end of executing this command you will get something like this:
 
 ```` 
 ```
- Data preprocessing done.
- The model has been fit.
- Save the fitted model?(y/n)
+Data preprocessing done.
+The model has been fit.
+Save the fitted model?(y/n)
 ```
 ```` 
 
