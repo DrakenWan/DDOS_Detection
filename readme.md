@@ -72,8 +72,9 @@ At the end of executing this command you will get something like this:
  Data preprocessing done.
  The model has been fit.
  Save the fitted model?(y/n)
-```` 
 ```
+```` 
+
 
 asking you to save the pre-trained model for future use. type "y" and press enter
 
