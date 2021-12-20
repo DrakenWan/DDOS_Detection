@@ -11,8 +11,8 @@ Models used to train with their train and test accuracies are:-
 The linear models had lower accuracy even after scaling the data and normalizing it. Clearly, there is a non-linear relationship between the prediction variable and data which was accurately fit using a neural network.
 
 The test size was 30%.
-I 
 
+Check out the [notebook](https://github.com/DrakenWan/DDOS_Detection/blob/master/SDN%20Dataset/SDN_Classification.ipynb) file.
 
 # DDOS Detector Using Machine Learning (2019)
 
@@ -68,11 +68,9 @@ So if you want to use tcp_syn protocol type and train it with KNN model type:
 At the end of executing this command you will get something like this:
 
 ```` 
-```
 Data preprocessing done.
 The model has been fit.
 Save the fitted model?(y/n)
-```
 ```` 
 
 
