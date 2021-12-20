@@ -47,8 +47,7 @@ There are two main programs:
 * You need to have following softwares and python packages to run the python files successfully:
  * python3.6 or above
  * python packages: numpy, sklearn, pandas, matplotlib, pickle, tqdm
- * instead of above softwares you can simply install the anaconda distribution
-    on python/R at this (link)[https://www.anaconda.com/distribution/]. It will install all necessary python packages for data science for you
+ * instead of above softwares you can simply install the anaconda distribution on python/R at this [link](https://www.anaconda.com/distribution/). It will install all necessary python packages for data science for you
  * It is necessary for these python packages to be installed to run the train.py and test.py
     python files.
 
@@ -79,7 +78,8 @@ CONGRATULATIONS! You saved your pre-trained model.
 
 #### TESTING OUR MODEL
 This is fast but a little tricky. You have to ensure how many parameters you input for testing out the class.
-   type `python test.py tcp_syn -1.5 1.0 2.0 30.0 1.0`
+
+type `python test.py tcp_syn -1.5 1.0 2.0 30.0 1.0`
 
 This will use the tcp_syn pre-trained model and test the given parameters on it.
 
@@ -87,17 +87,28 @@ Now each protocol has different parameter length as input. While tcp_syn protoco
 a length of 5 float value inputs others may take different inputs.
 
 > NOTE:
+
 > ICMP TAKES 7 ARGUMENTS
+
 > UDP TAKES 5 ARGUMENTS
+
 > TCP_SYN TAKES 5 ARGUMENTS
 
+
 I have put command line statements below for you to execute and test the dataset.
+
 `python test.py tcp_syn -1.5 1.0 2.0 1.0 1.0`
+
 `python test.py tcp_syn -1.5 1.0 2.0 30.0 1.0`
+
 `python test.py icmp 0.0 0.0 30.0 0.0 1.0 0.0 0.0`
+
 `python test.py icmp -0.1 30.0 0.0 2.0 0.0 0.0 2.0`
+
 `python test.py udp 146.0 0.0 105.0 254.0 2.0`
+
 `python test.py udp 45.0 -0.3 45.0 236.0 2.0`
+
 
 ### DATASET
   All of the generated, consolidated and split dataset is stored in dataset folder and
@@ -116,10 +127,16 @@ Just follow below. You need not read the entire instructions given above.
 
 EXECUTE FOLLOWING COMMANDS ON YOUR CMD:
 
-python test.py tcp_syn -1.5 1.0 2.0 1.0 1.0
-python test.py tcp_syn -1.5 1.0 2.0 30.0 1.0
-python test.py icmp 0.0 0.0 30.0 0.0 1.0 0.0 0.0
-python test.py icmp -0.1 30.0 0.0 2.0 0.0 0.0 2.0
-python test.py udp 146.0 0.0 105.0 254.0 2.0
-python test.py udp 45.0 -0.3 45.0 236.0 2.0
+`python test.py tcp_syn -1.5 1.0 2.0 1.0 1.0`
+
+`python test.py tcp_syn -1.5 1.0 2.0 30.0 1.0`
+
+`python test.py icmp 0.0 0.0 30.0 0.0 1.0 0.0 0.0`
+
+`python test.py icmp -0.1 30.0 0.0 2.0 0.0 0.0 2.0`
+
+`python test.py udp 146.0 0.0 105.0 254.0 2.0`
+
+`python test.py udp 45.0 -0.3 45.0 236.0 2.0`
+
 
