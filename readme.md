@@ -1,35 +1,38 @@
-The parameters were just chosen using Random forest Tree classifier 
-and best 5/7 features were considered as parameters to train the model.
+# 2021 Update
+I have created a new folder named SDN Dataset which has three standard sklearn models trained over SDN dataset uploaded [here](https://data.mendeley.com/datasets/jxpfjc64kr/1) by their authors. This dataset was generated in mid 2020 using mininet emulator. The dataset was specifically generated for ML or DL model training which is a plus.
 
-# DDOS Detector Using Machine Learning
-# Project Authored by: Kartikay Kaul, Revanth Regeti
+During pre-processing of data, I removed rows that had null values as well as "O" (Object) data type. Removal of rows didn't affect the dataset size as it was significantly large. The values of each attribute was scaled using `StandardScaler()`.
+
+Models used to train with their train and test accuracies are:-
+* Logistic Regression - ~75
+* SGD Classifier -  ~76
+* Multi-layer Perceptron neural network - ~99
+
+The linear models had lower accuracy even after scaling the data and normalizing it. Clearly, there is a non-linear relationship between the prediction variable and data which was accurately fit using a neural network.
+
+The test size was 30%.
+I 
+
+
+# DDOS Detector Using Machine Learning (2019)
+
+Project Authored by: Kartikay Kaul, Revanth Regeti
 
 If you do not wish to read the verbose below just scroll
 to the END OF THIS DOCUMENT (Ensure you have all the python packages installed
 advised in start) and execute the given statements in windows cmd (ensure
 to run those commands where all project files are)
 
-+++++++++++++++++++LICENSE+++++++++++++++++++++++++++++
-Copyright 2019 Kartikay Kaul
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
 ========================================================
-Contents:
+### Contents:
 
-1. Running The program as its
-2. Dataset
-3. Running Notebooks
+- Running The program as its
+- Dataset
+- Running Notebooks
 
 =========================================================
 
-1. RUNNING THE PROGRAM AS IT IS
+## RUNNING THE PROGRAM AS IT IS
 There are two main programs:
 	train.py 	test.py
 *train.py is used to train the models(sklearn ones) on different protocols
@@ -90,11 +93,12 @@ the python files successfully:
 	"python test.py udp 146.0 0.0 105.0 254.0 2.0"
 	"python test.py udp 45.0 -0.3 45.0 236.0 2.0"
 
-2. DATASET
+## DATASET
   All of the generated, consolidated and split dataset is stored in dataset folder and
   is open to use by any. The cleaned.csv file is KD99 generated dataset. It is not ours.
   Our dataset is the refined ones and we are not providing it.
-3. JUPYTER NOTEBOOKS
+
+## JUPYTER NOTEBOOKS
    
    ".ipynb" files can be run by installing jupyter on your system.
    run "pip3 install jupyter" on your cmd
