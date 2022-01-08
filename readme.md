@@ -8,6 +8,9 @@ Models used to train with their train and test accuracies are:-
 * SGD Classifier -  ~76
 * Multi-layer Perceptron neural network - ~99
 
+One point to note is that it is always better to let the accuracy be not close to 100 as if neural network gets new data it doesn't know how to deal with it
+might be less likely to deal with the data input properly. It might be overfitted. One way to look at it is if their is high deviation between train and test accuracies then you might've overfitted the data (if train accuracy is close to 100 but on validation data it is way less).
+
 The linear models had lower accuracy even after scaling the data and normalizing it. Clearly, there is a non-linear relationship between the prediction variable and data attributes which was accurately fit using a Multi-layer perceptron neural network.
 
 The test size was 30%.
