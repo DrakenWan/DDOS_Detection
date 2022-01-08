@@ -11,10 +11,12 @@ Models used to train with their train and test accuracies are:-
 
 ### NOTE 
 
-One point to note is that it is always better to let the accuracy be not close to 100 as if neural network gets new data it doesn't know how to deal with it
-might be less likely to deal with the data input properly. It might be overfitted. One way to look at it is if their is high deviation between train and test accuracies then you might've overfitted the data (if train accuracy is close to 100 but on validation data it is way less).
+One point to note is that it is always better to let the accuracy be not close to 100 as if our model gets new data it doesn't know how to deal with, it
+might be less likely to deal with the data input properly. It might be overfitted. One way to look at it is if there is high deviation between train and test accuracies then you might've overfitted the data (if train accuracy is close to 100 but on validation data it is way less). In my case, that isn't the case so there might be other parameters.
 
-I still am going to further investigate the 2020 data. One thing I proceed with is performing data visualisation on each parameter and find any relationships manually that might've contributed to a certain bias. Maybe some value is occuring somewhere way too many times to be associated well with the predictor in our data given but in actuality is not really related with predictor rather it is just mere coincidence that in our current data that association was made by MLP.
+I still am going to further investigate the 2020 data. One thing I can proceed with is performing data visualisation on each parameter and find any relationships manually that might've contributed to a certain bias. Maybe some value is occuring somewhere way too many times to be associated well with the predictor in our data given but in actuality is not really related with predictor rather it is just mere coincidence that in our current data that association was made by MLP.
+
+To further elaborate this notion, Let's consider an example where I am classifying images based on the emotions of face and I have pictures of real life people with emotions such as angry, happy, sad, disgusted, etc. There might be a case where like 80% of the images which are classified as angry have a person with blue shirt. The model might associate the blue shirt as the sole factor to be consiered as an emotion of anger. We can solve this by introducing samples of 'angry' people with random coloured shirts or we can just crop out the shirt part from the image for better prediction. In this case, we are dealing with numerical data with thousands of rows. Best way is to use data visualisation techniques to determine any such relation.
 
 Also this is not a simple ML problem. We are supposed to predict based on huge numerical data given if we are being attacked with a DDOS or not. This is not a simple problem. It is complex given the number of attributes.
 
