@@ -20,9 +20,7 @@ To further elaborate this notion, Let's consider an example where I am classifyi
 
 Also this is not a simple ML problem. We are supposed to predict based on huge numerical data given if we are being attacked with a DDOS or not. This is not a simple problem. It is complex given the number of attributes.
 
-
-
-The linear models had lower accuracy even after scaling the data and normalizing it. Clearly, there is a non-linear relationship between the prediction variable and data attributes which was accurately fit using a Multi-layer perceptron neural network.
+Adding too many attributes leads to overfit. We can try different combinations of attributes to train our model.
 
 The test size was 30%.
 
